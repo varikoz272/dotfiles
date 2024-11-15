@@ -1,0 +1,45 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "height": 24, // Waybar height
+    "width": 1000, // Waybar width
+    "modules-left": ["hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["battery", "clock"],
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            "good": 80,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+	"locale": "en_IE.UTF-8",
+	"interval": 1,
+        "format": "{:%A, %d %B, %Y (%H:%M:%S)}  ",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+		"mode"          : "year",
+		"mode-mon-col"  : 6,
+		"weeks-pos"     : "left",
+		"on-scroll"     : 1,
+		"format": {
+			"months":     "<span color='#86e7fe'><b>{}</b></span>",
+			"days":       "<span color='#86e7fe'><b>{}</b></span>",
+			"weeks":      "<span color='#f2fdff'><b>{} </b></span>",
+			"weekdays":   "<span color='#f2fdff'><b>{}</b></span>",
+			"today":      "<span color='#f2fdff'><b><u>{}</u></b></span>"
+                }
+        },
+        "actions":  {
+		"on-click-right": "mode",
+		"on-scroll-up": "tz_up",
+		"on-scroll-down": "tz_down",
+		"on-scroll-up": "shift_up",
+		"on-scroll-down": "shift_down"
+	}
+    },
+}

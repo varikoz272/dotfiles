@@ -1,0 +1,86 @@
+* {
+    font-family: "ComicShannsMono Nerd Font";
+    font-size: 16px;
+    min-height: 16px;
+    font-weight: bold;
+    margin: 2px 0;
+    border-radius: 4px;
+    border: 3px;
+    color: rgba(235, 252, 255, 1.0);
+    background: transparent;
+}
+
+#window,
+#clock,
+#battery {
+    padding: 0 10px;
+    border-radius: 25px;
+    background: rgba(0, 67, 138, 1.0);
+}
+
+/* rgba(10bdfeee) rgba(008af3ee)  */
+tooltip {
+    font-size: 11pt;
+    font-family: "ComicShannsMono Nerd Font";
+    background: rgba(0, 37, 89, 0.3);
+    border: 1px;
+    border-radius: 25px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, rgba(16, 189, 254, 1.0) 0%, rgba(0, 138, 243, 1.0) 60%) 1;
+}
+
+
+/**/
+/* #workspaces { */
+/*     padding: 0 5px; */
+/* } */
+/**/
+/**/
+/* #workspaces button { */
+/*     padding: 0px; */
+/*     background: transparent; */
+/*     color: white; */
+/*     border-top: 2px solid transparent; */
+/* } */
+/**/
+/* #workspaces button.focused { */
+/*     color: #c9545d; */
+/*     border-top: 2px solid #c9545d; */
+/* } */
+/**/
+/* #mode { */
+/*     background: #64727D; */
+/*     border-bottom: 3px solid white; */
+/* } */
+/**/
+/* #clock, */
+/* #battery { */
+/*     padding: 0px; */
+/*     margin: 0 20px; */
+/* } */
+/**/
+/* #clock { */
+/*     font-weight: bold; */
+/* } */
+/**/
+/* #battery icon { */
+/*     color: red; */
+/* } */
+/**/
+/* #battery.charging {} */
+/**/
+/* @keyframes blink { */
+/*     to { */
+/*         background-color: #ffffff; */
+/*         color: black; */
+/*     } */
+/* } */
+/**/
+/* #battery.warning:not(.charging) { */
+/*     color: white; */
+/*     animation-name: blink; */
+/*     animation-duration: 0.5s; */
+/*     animation-timing-function: linear; */
+/*     animation-iteration-count: infinite; */
+/*     animation-direction: alternate; */
+/* } */
