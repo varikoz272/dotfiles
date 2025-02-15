@@ -2,5 +2,6 @@ sudo pacman -S git neovim zig openshot discord telegram-desktop gimp blender aud
 sudo systemctl enable systemd-resolved.service
 sudo systemctl enable redis.service
 sudo systemctl enable docker.service
+systemctl --user --now enable wireplumber
 sudo chmod a+w /var/run/postgresql
 echo =======================> SET PROTECT HOME TO FALSE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
