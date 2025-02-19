@@ -161,6 +161,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.ignorecase = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -787,9 +789,9 @@ require("lazy").setup({
 				-- No, but seriously. Please read `:help ins-completion`, it is really good!
 				mapping = cmp.mapping.preset.insert({
 					-- Select the [n]ext item
-					["<C-n>"] = cmp.mapping.select_next_item(),
+					["о"] = cmp.mapping.select_next_item(),
 					-- Select the [p]revious item
-					["<C-p>"] = cmp.mapping.select_prev_item(),
+					["л"] = cmp.mapping.select_prev_item(),
 
 					-- Scroll the documentation window [b]ack / [f]orward
 					-- ['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -1001,7 +1003,16 @@ require("lazy").setup({
 
 	{
 		"brenoprata10/nvim-highlight-colors",
+	},
 
+	{
+		"folke/flash.nvim",
+		-- stylua: ignore
+		keys = {
+			{ "ы", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+			{ "е", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+			{ "щ", mode = { "n", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+		},
 	},
 }, {
 	ui = {
