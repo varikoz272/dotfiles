@@ -4,6 +4,7 @@ install(){
 	cd anaconda
 	makepkg -si
 	echo "PATH=$PATH:/opt/anaconda/bin" >>> ~/.bashrc
+	conda init
 }
 
 install()
