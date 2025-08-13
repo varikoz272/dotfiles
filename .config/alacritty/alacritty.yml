@@ -1,0 +1,51 @@
+# ~/.config/alacritty/alacritty.yml
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.9
+  decorations: "Full"
+  decorations_theme_variant: "Light"  # or "Dark"
+font:
+  normal:
+    family: "Cascadia Code PL"
+    style: "Regular"
+  bold:
+    family: "Cascadia Code PL"
+    style: "Bold"
+  italic:
+    family: "Cascadia Code PL"
+    style: "Italic"
+  bold_italic:
+    family: "Cascadia Code PL"
+    style: "Bold Italic"
+  size: 15.0
+colors:
+  # Default colors
+  primary:
+    background: '#252525'
+    foreground: '#d4d4d4'
+  # Dim colors
+  dim:
+    black: '#3e3e3e'
+    red: '#a35f5f'
+    green: '#8ac16a'
+    yellow: '#e7c67d'
+    blue: '#75a3a3'
+    magenta: '#b47cb4'
+    cyan: '#70b4b4'
+    white: '#d4d4d4'
+  # Normal colors
+  normal:
+    black: '#1e1e1e'
+    red: '#cc5252'
+    green: '#55aa55'
+    yellow: '#e7c67d'
+    blue: '#6796e6'
+    magenta: '#bb77bb'
+    cyan: '#77a6b4'
+    white: '#d4d4d4'
+# Example keyboard binding
+keyboard:
+  bindings:
+    - { key: Return, mods: Control|Shift, action: SpawnNewInstance }

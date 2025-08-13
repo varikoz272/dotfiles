@@ -1,0 +1,56 @@
+[colors.dim]
+black = "#3e3e3e"
+blue = "#75a3a3"
+cyan = "#70b4b4"
+green = "#8ac16a"
+magenta = "#b47cb4"
+red = "#a35f5f"
+white = "#d4d4d4"
+yellow = "#e7c67d"
+
+[colors.normal]
+black = "#1e1e1e"
+blue = "#6796e6"
+cyan = "#77a6b4"
+green = "#55aa55"
+magenta = "#bb77bb"
+red = "#cc5252"
+white = "#d4d4d4"
+yellow = "#e7c67d"
+
+[colors.primary]
+background = "#252525"
+foreground = "#d4d4d4"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "ComicShannsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "ComicShannsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "ComicShannsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "ComicShannsMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
+
+[window]
+decorations = "Full"
+decorations_theme_variant = "Dark"
+opacity = 1
+
+[window.padding]
+x = 0
+y = 0
